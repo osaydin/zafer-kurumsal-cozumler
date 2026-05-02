@@ -55,6 +55,47 @@ export default function ContactPage() {
             </div>
           </div>
 
+          <div className="mt-8 border-t border-white/10 pt-6">
+            <p className="text-sm font-bold uppercase tracking-[0.2em] text-red-300">
+              Sosyal Medya
+            </p>
+
+            <div className="mt-4 flex flex-col gap-3 sm:flex-row sm:flex-wrap">
+              <a
+                href={company.socials.instagram}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center justify-center rounded-full bg-gradient-to-r from-purple-600 via-pink-500 to-orange-400 px-5 py-3 text-sm font-semibold text-white shadow-lg shadow-pink-500/20 transition hover:-translate-y-0.5 hover:shadow-pink-500/30"
+              >
+                Instagram
+              </a>
+
+              {company.socials.linkedin ? (
+                <a
+                  href={company.socials.linkedin}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center justify-center rounded-full bg-white px-5 py-3 text-sm font-semibold text-neutral-950 transition hover:-translate-y-0.5 hover:bg-red-100"
+                >
+                  LinkedIn
+                </a>
+              ) : (
+                <span className="inline-flex items-center justify-center rounded-full bg-white/[0.10] px-5 py-3 text-sm font-semibold text-white/60">
+                  LinkedIn Yakında
+                </span>
+              )}
+
+              <a
+                href={`https://wa.me/${company.phoneLink.replace("+", "")}`}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center justify-center rounded-full bg-green-500 px-5 py-3 text-sm font-semibold text-white transition hover:-translate-y-0.5 hover:bg-green-600"
+              >
+                WhatsApp
+              </a>
+            </div>
+          </div>
+
           <div className="mt-8">
             <ButtonLink
               variant="ghost"

@@ -6,3 +6,5 @@ out/
 .env*.local
 .vercel/
 .DS_Store
+
+/public/kataloglar/toplu-satis-katalogu.pdf
