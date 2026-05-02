@@ -23,7 +23,7 @@ export function Navbar() {
     <header className="sticky top-0 z-50 border-b border-neutral-200/80 bg-white/90 backdrop-blur-xl">
       <div className="mx-auto flex max-w-7xl items-center justify-between px-5 py-4 lg:px-8">
         <Link href="/" className="flex items-center gap-3" onClick={() => setOpen(false)}>
-          <Image src={company.logo} alt="Zafer Ticaret A.Ş. Logo" width={220} height={64} priority className="h-10 w-auto object-contain" />
+          <Image src={company.logo} alt="Zafer Ticaret A.Ş. Logo" width={220} height={64} priority className="h-20 w-auto object-contain" />
         </Link>
 
         <nav className="hidden items-center gap-1 lg:flex" aria-label="Ana menü">
