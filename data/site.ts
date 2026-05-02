@@ -119,7 +119,7 @@ export const references: ReferenceItem[] = [
   { name: "Atlasjet", logo: "/referanslar/atlasjet.png" },
   { name: "Tanoto", logo: "/referanslar/tanoto.webp" },
   { name: "Çayırhan Termik EÜAŞ", logo: "/referanslar/euas.webp" },
-  { name: "TTRAK", logo: "/referanslar/ttrak.webp" },
+  { name: "Türk Traktör", logo: "/referanslar/ttrak.webp" },
   { name: "TUSAŞ", logo: "/referanslar/tusas.jpg" },
   { name: "Baştaş Hazır Beton", logo: "/referanslar/bastas.png" },
   { name: "Bilkent Üniversitesi", logo: "/referanslar/bilkent.png" },
