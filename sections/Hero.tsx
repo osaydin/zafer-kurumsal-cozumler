@@ -59,10 +59,6 @@ export function Hero() {
               </div>
             </div>
           </div>
-          <div className="absolute -bottom-6 -left-4 rounded-3xl border border-neutral-200 bg-white p-5 shadow-xl shadow-neutral-950/10">
-            <p className="text-sm font-bold text-neutral-950">İletişim</p>
-            <p className="mt-1 text-sm text-neutral-500">{company.phone}</p>
-          </div>
         </div>
       </div>
     </section>
