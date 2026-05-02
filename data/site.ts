@@ -38,7 +38,7 @@ export const company = {
   phone: "0 531 972 46 62",
   phoneLink: "+905319724662",
   address: "Ostim OSB, 100. Yıl Blv No:118, 06374 Yenimahalle/Ankara",
-  logo: "https://www.zaferticaretas.com/themes/premium/assets/images/logo.png"
+  logo: "/logo.png",
 } as const;
 
 export const navItems: NavItem[] = [
