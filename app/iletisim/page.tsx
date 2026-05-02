@@ -7,6 +7,9 @@ export const metadata = {
   title: "İletişim | Zafer Ticaret A.Ş.",
 };
 
+const mapUrl =
+  "https://www.google.com/maps?q=Ostim%20OSB%2C%20100.%20Y%C4%B1l%20Blv%20No%3A118%2C%2006374%20Yenimahalle%2FAnkara&output=embed";
+
 export default function ContactPage() {
   return (
     <PageShell
@@ -50,6 +53,17 @@ export default function ContactPage() {
                 <span className="font-bold leading-7">{company.address}</span>
               </span>
             </div>
+          </div>
+
+          <div className="mt-8">
+            <ButtonLink
+              variant="ghost"
+              href={`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(
+                company.address
+              )}`}
+            >
+              Google Maps’te Aç
+            </ButtonLink>
           </div>
         </div>
 
@@ -177,6 +191,29 @@ export default function ContactPage() {
             adresine iletilir.
           </p>
         </form>
+      </div>
+
+      <div className="mt-10 overflow-hidden rounded-[2rem] border border-neutral-200 bg-white shadow-sm">
+        <div className="border-b border-neutral-200 px-6 py-5">
+          <p className="text-sm font-bold uppercase tracking-[0.2em] text-red-700">
+            Konum
+          </p>
+          <h2 className="mt-2 text-2xl font-bold text-neutral-950">
+            Zafer Ticaret A.Ş. Lokasyon
+          </h2>
+          <p className="mt-2 text-sm leading-6 text-neutral-600">
+            {company.address}
+          </p>
+        </div>
+
+        <iframe
+          title="Zafer Ticaret A.Ş. Google Maps Konumu"
+          src={mapUrl}
+          className="h-[420px] w-full border-0"
+          loading="lazy"
+          referrerPolicy="no-referrer-when-downgrade"
+          allowFullScreen
+        />
       </div>
     </PageShell>
   );
