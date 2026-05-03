@@ -27,7 +27,7 @@ export const metadata: Metadata = {
     title: "Zafer Ticaret A.Ş. | Arçelik Kurumsal Çözümler",
     description:
       "Ankara merkezli kurumsal projeler için ürün, tedarik ve çözüm desteği.",
-    url: "https://zafer-kurumsal-cozumler.vercel.app",
+    url: "https://kurumsalcozumler.zaferticaretas.com",
     siteName: "Zafer Ticaret A.Ş.",
     locale: "tr_TR",
     type: "website",
@@ -52,7 +52,7 @@ export const metadata: Metadata = {
     shortcut: company.logo,
     apple: company.logo,
   },
-  metadataBase: new URL("https://zafer-kurumsal-cozumler.vercel.app"),
+  metadataBase: new URL("https://kurumsalcozumler.zaferticaretas.com"),
 };
 
 export default function RootLayout({
